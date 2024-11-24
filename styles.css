@@ -1,0 +1,53 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Container for centering the button */
+.container {
+    text-align: center;
+}
+
+/* Button Styles */
+.services-btn {
+    background-color: #808080; /* Ash color */
+    color: #fff;
+    border-radius: 32px;
+    border: 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for the button */
+.services-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .services-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
