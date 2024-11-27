@@ -9,11 +9,18 @@ body {
     align-items: center;
     height: 100vh;
     color: white;
+    text-align: center;
+    flex-direction: column;
 }
 
-/* Container for centering the button */
-.container {
-    text-align: center;
+/* Heading Styles */
+.main-heading {
+    font-size: 3vw; /* Scales with screen width */
+    font-weight: bold;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    white-space: nowrap; /* Ensures the text stays in one line */
+    color: #fff; /* White color for the text */
 }
 
 /* Button Styles */
@@ -39,6 +46,10 @@ body {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    .main-heading {
+        font-size: 5vw; /* Slightly larger on smaller screens */
+    }
+
     .services-btn {
         font-size: 16px;
         padding: 12px 25px;
@@ -46,6 +57,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .main-heading {
+        font-size: 6vw; /* Even larger for very small screens */
+    }
+
     .services-btn {
         font-size: 14px;
         padding: 10px 20px;
