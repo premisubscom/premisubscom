@@ -7,20 +7,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Stack elements vertically */
     height: 100vh;
     color: white;
     text-align: center;
-    flex-direction: column;
 }
 
-/* Heading Styles */
-.main-heading {
-    font-size: 3vw; /* Scales with screen width */
+/* Hero Text Styles */
+.hero-text {
+    font-size: 2rem; /* Base size */
     font-weight: bold;
-    margin: 0 0 20px;
+    margin-bottom: 20px;
+    color: #fff; /* White text */
     text-transform: uppercase;
-    white-space: nowrap; /* Ensures the text stays in one line */
-    color: #fff; /* White color for the text */
+    letter-spacing: 2px;
 }
 
 /* Button Styles */
@@ -31,7 +31,7 @@ body {
     border: 0;
     padding: 15px 30px;
     font-size: 18px;
-    font-weight: bold; /* Makes the text bold */
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     outline: none;
@@ -46,10 +46,9 @@ body {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .main-heading {
-        font-size: 5vw; /* Slightly larger on smaller screens */
+    .hero-text {
+        font-size: 1.5rem; /* Adjust size for tablets */
     }
-
     .services-btn {
         font-size: 16px;
         padding: 12px 25px;
@@ -57,10 +56,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .main-heading {
-        font-size: 6vw; /* Even larger for very small screens */
+    .hero-text {
+        font-size: 1.2rem; /* Adjust size for smaller screens */
     }
-
     .services-btn {
         font-size: 14px;
         padding: 10px 20px;
