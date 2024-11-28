@@ -1,0 +1,66 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+/* Hero Text Styles */
+.hero-text {
+    font-size: 2rem; /* Base size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff; /* White text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Button Styles */
+.services-btn {
+    background-color: #808080; /* Ash color */
+    color: #fff;
+    border-radius: 32px;
+    border: 0;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for the button */
+.services-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .hero-text {
+        font-size: 1.5rem; /* Adjust size for tablets */
+    }
+    .services-btn {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-text {
+        font-size: 1.2rem; /* Adjust size for smaller screens */
+    }
+    .services-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
